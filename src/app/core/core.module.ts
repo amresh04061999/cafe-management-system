@@ -4,6 +4,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { AsideComponent } from './component/aside/aside.component';
 import { MasterComponent } from './component/master/master.component';
 import { LoaderComponent } from './component/loader/loader.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { LoaderComponent } from './component/loader/loader.component';
     AsideComponent,
     MasterComponent,
     LoaderComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule
