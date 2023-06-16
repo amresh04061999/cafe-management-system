@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [{ path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) }, { path: 'home-page', loadChildren: () => import('./home-page/home-page.module').then(m => m.HomePageModule) }, { path: 'registration', loadChildren: () => import('./registration/registration.module').then(m => m.RegistrationModule) }, { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }];
+const routes: Routes = [
+  {
+    path:'',
+    pathMatch:'full',
+    redirectTo:'user-dashboard'
+  },
+{ path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) }, 
+{ path: 'registration', loadChildren: () => import('./registration/registration.module').then(m => m.RegistrationModule) }, 
+{ path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
+{ path: 'user-dashboard', loadChildren: () => import('./user-dashboard/user-dashboard.module').then(m => m.UserDashboardModule) }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

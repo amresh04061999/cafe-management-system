@@ -1,9 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-
-// @import "assets/scss/base/index";
-@import "assets/scss/vendor/index";
+// icon style
+@import "assets/icons/style.css";
+// scss
+@import "assets/scss/base/index";
 @import "assets/scss/component/index";
+@import "assets/scss/vendor/index";
 @import "assets/scss/layout/index";
 @import "assets/scss/utility/index";
 
 
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

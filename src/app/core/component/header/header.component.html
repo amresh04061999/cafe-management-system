@@ -1,1 +1,23 @@
-<p>header works!</p>
+<header class="d-flex justify-content-between align-items-center common-color border border-secondry">
+    <div class="cafe-icon overflow-hidden bg-white ">
+        <img src="../../../../assets/images/logo-image.png" alt="cafe-logo" class="h-100 w-100 curser-pointer ">
+    </div>
+    <ul class="nav">
+        <li class="nav-item text-white-color fw-bold curser-pointer">
+            HOME
+        </li>
+        <li class="nav-item text-white-color curser-pointer fw-bold ms-3">
+            ABOUT
+        </li>
+        <li class="nav-item text-white-color curser-pointer fw-bold ms-3">
+            CONTACT
+        </li>
+    </ul>
+    <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center">
+            <i class="icon-sign-in text-white-color curser-pointer fs-4 me-2"> </i>
+            <span class="text-white-color fw-bold me-3 curser-pointer">Sign In</span>
+        </div>
+        <i class="text-white-color curser-pointer fs-4 me-4" (click)="toggleThemeIcon()" [ngClass]="isDarkMode ?'icon-sun-fill':'icon-sun1'"></i>
+    </div>
+</header>               
