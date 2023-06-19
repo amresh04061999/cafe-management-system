@@ -2,22 +2,21 @@
     <div class="cafe-icon overflow-hidden bg-white ">
         <img src="../../../../assets/images/logo-image.png" alt="cafe-logo" class="h-100 w-100 curser-pointer ">
     </div>
-    <ul class="nav">
-        <li class="nav-item text-white-color fw-bold curser-pointer">
+     <ul class="nav">
+        <li class="nav-item text-white-color fw-bold curser-pointer" routerLink="user-dashboard/home" routerLinkActive="active">
             HOME
         </li>
-        <li class="nav-item text-white-color curser-pointer fw-bold ms-3">
+        <li class="nav-item text-white-color curser-pointer fw-bold ms-3" routerLink="user-dashboard/about" routerLinkActive="active">
             ABOUT
         </li>
-        <li class="nav-item text-white-color curser-pointer fw-bold ms-3">
+        <li class="nav-item text-white-color curser-pointer fw-bold ms-3" routerLink="user-dashboard/contact" routerLinkActive="active">
             CONTACT
         </li>
     </ul>
-    <div class="d-flex align-items-center">
-        <div class="d-flex align-items-center">
-            <i class="icon-sign-in text-white-color curser-pointer fs-4 me-2"> </i>
-            <span class="text-white-color fw-bold me-3 curser-pointer">Sign In</span>
-        </div>
-        <i class="text-white-color curser-pointer fs-4 me-4" (click)="toggleThemeIcon()" [ngClass]="isDarkMode ?'icon-sun-fill':'icon-sun1'"></i>
-    </div>
+    <ul class="nav d-flex align-items-center">
+        <li class="nav-item icon-sign-in text-white-color curser-pointer fs-4 me-2">
+        </li>
+        <li class="nav-item text-white-color fw-bold me-3 curser-pointer">Sign In</li>
+        <li class="nav-item text-white-color curser-pointer fs-4 me-4" (click)="toggleThemeIcon()" [ngClass]="isDarkMode ?'icon-sun-fill':'icon-sun-fill'"></li>
+    </ul>
 </header>               

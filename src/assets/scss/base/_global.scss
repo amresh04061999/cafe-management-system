@@ -23,6 +23,8 @@ body{
     --border: 2px solid #363947;
     --border-head: #363947;
     --text-color: white;
+    --text-color-secondary: rgb(170, 170, 170);
+     --text-color-primary:#ff1414;
 }
 .dark-mode {
     --primary-bg-color: white;
@@ -33,6 +35,9 @@ body{
     --border: 2px solid #dfe8f1;
     --border-head: #dfe8f1;
     --text-color: black;
+    --text-color-secondary: rgb(170, 170, 170);
+
+    --text-color-primary:#0c0e45;
 }
 
 .common-color {
@@ -45,3 +50,10 @@ body{
 .text-white-color {
     color: var(--text-color);
 }
+.text-secondary-color {
+    color: var(--text-color-secondary);
+}
+.text-primary-color {
+    color: var(--text-color-primary);
+}
+

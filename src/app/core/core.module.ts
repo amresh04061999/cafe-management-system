@@ -5,6 +5,8 @@ import { AsideComponent } from './component/aside/aside.component';
 import { MasterComponent } from './component/master/master.component';
 import { LoaderComponent } from './component/loader/loader.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { RouterModule } from '@angular/router';
+import { UserDashboardRoutingModule } from '../user-dashboard/user-dashboard-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { FooterComponent } from './component/footer/footer.component';
     FooterComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ],
   exports:[HeaderComponent,AsideComponent,FooterComponent,MasterComponent,LoaderComponent]
 })

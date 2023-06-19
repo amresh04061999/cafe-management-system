@@ -9,7 +9,10 @@ import { HomePageContainerComponent } from './home-page-container/home-page-cont
 import { HomePagePresentationComponent } from './home-page-container/home-page-presentation/home-page-presentation.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FormsModule } from '@angular/forms';
-
+import { AboutContainerComponent } from './about-container/about-container.component';
+import { ContactContainerComponent } from './contact-container/contact-container.component';
+import { AboutPresentationComponent } from './about-container/about-presentation/about-presentation.component';
+import { ContactPresentationComponent } from './contact-container/contact-presentation/contact-presentation.component';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -17,14 +20,16 @@ import { FormsModule } from '@angular/forms';
     CarouselPresentationComponent,
     HomePageContainerComponent,
     HomePagePresentationComponent,
+    AboutContainerComponent,
+    ContactContainerComponent,
+    AboutPresentationComponent,
+    ContactPresentationComponent,
   ],
   imports: [
     CommonModule,
     UserDashboardRoutingModule,
     CarouselModule,
     FormsModule,
-
-    
   ]
 })
 export class UserDashboardModule { }
