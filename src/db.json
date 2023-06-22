@@ -1,0 +1,10 @@
+{
+    "ragistration":[
+        {
+            "firstName":"",
+            "lastName":"",
+            "email":"",
+            "password":""
+        }
+    ]
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OverlayService } from '../../services/overlay/overlay.service';
+import { LoginComponent } from 'src/app/login/login.component';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +12,7 @@ export class HeaderComponent implements OnInit {
   public isDarkMode: boolean;
    public themeLight:string;
    public themeDark:string;
-  constructor() {
+  constructor(private _overlay:OverlayService) {
     this.isDarkMode = false;
     this.themeDark='Dark';
     this.themeDark='light';
@@ -35,5 +37,11 @@ export class HeaderComponent implements OnInit {
     const rootElement = document.documentElement;
     this.isDarkMode ? rootElement.classList.add('dark-mode') : rootElement.classList.remove('dark-mode');
   }
+  /**
+   * 
+   */
+  public openOverlay() {
+    this._overlay.open(LoginComponent)
 
+  }
 }

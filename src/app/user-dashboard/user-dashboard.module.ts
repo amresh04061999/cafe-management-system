@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { UserDashboardRoutingModule } from './user-dashboard-routing.module';
 import { UserDashboardComponent } from './user-dashboard.component';
 import { CarouselContainerComponent } from './carousel-container/carousel-container.component';
@@ -13,6 +12,7 @@ import { AboutContainerComponent } from './about-container/about-container.compo
 import { ContactContainerComponent } from './contact-container/contact-container.component';
 import { AboutPresentationComponent } from './about-container/about-presentation/about-presentation.component';
 import { ContactPresentationComponent } from './contact-container/contact-presentation/contact-presentation.component';
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -30,6 +30,11 @@ import { ContactPresentationComponent } from './contact-container/contact-presen
     UserDashboardRoutingModule,
     CarouselModule,
     FormsModule,
+    AgmCoreModule.forRoot({
+      // please get your own API key here:
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+      apiKey: 'AIzaSyDQvkwwCo9BMry20wyQR8ymCwFWwhqQzuE'
+    })
   ]
 })
 export class UserDashboardModule { }

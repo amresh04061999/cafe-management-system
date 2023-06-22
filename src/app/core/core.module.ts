@@ -6,7 +6,8 @@ import { MasterComponent } from './component/master/master.component';
 import { LoaderComponent } from './component/loader/loader.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { UserDashboardRoutingModule } from '../user-dashboard/user-dashboard-routing.module';
+import {OverlayModule} from '@angular/cdk/overlay';
+import { OverlayService } from './services/overlay/overlay.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { UserDashboardRoutingModule } from '../user-dashboard/user-dashboard-rou
     CommonModule,
     RouterModule,
   ],
+  providers:[OverlayService],
   exports:[HeaderComponent,AsideComponent,FooterComponent,MasterComponent,LoaderComponent]
 })
 export class CoreModule { }
